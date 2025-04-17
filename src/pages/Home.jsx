@@ -33,6 +33,7 @@ function Home() {
     try {
       const searchResults = await searchMovie(searchQuery);
       setMovies(searchResults);
+      console.log(searchResults)
       setError(null);
     } catch (error) {
       console.log(error);
